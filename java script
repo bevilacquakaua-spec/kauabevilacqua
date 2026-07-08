@@ -1,0 +1,14 @@
+// Aguarda o carregamento do documento
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // Seleciona todos os botões de "Ler mais"
+    const botoesLeitura = document.querySelectorAll('.btn-leia-mais');
+
+    // Adiciona um evento de clique em cada um deles
+    botoesLeitura.forEach((botao) => {
+        botao.addEventListener('click', () => {
+            alert('Esta postagem completa estará disponível em breve! Obrigado pelo interesse.');
+        });
+    });
+
+});
