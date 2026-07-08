@@ -9,9 +9,10 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="container header-content">
             <h1>Blog do Kauã</h1>
-            <p>Explorando o universo da Bovinocultura de Leite</p>
+            <p>Inovação, manejo e tecnologia na Bovinocultura de Leite</p>
+            <button id="toggle-dark-mode" class="btn-dark-mode">🌙 Alternar Tema</button>
         </div>
     </header>
 
@@ -21,44 +22,66 @@
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#postagens">Postagens</a></li>
                 <li><a href="#sobre">Sobre o Kauã</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="container">
         <section id="inicio" class="hero">
-            <h2>Bem-vindo ao canal do leite!</h2>
-            <p>Aqui compartilhamos técnicas, manejos e novidades sobre a produção leiteira de forma simples e eficiente.</p>
+            <h2>O Futuro da Produção Leiteira</h2>
+            <p>Seja bem-vindo! Este portal foi criado para produtores, estudantes e entusiastas que buscam aumentar a eficiência, a qualidade do leite e o bem-estar animal no campo.</p>
         </section>
 
-        <section id="postagens">
-            <h2>Últimas Publicações</h2>
+        <h2 class="section-title" id="postagens">🎯 Últimas Publicações</h2>
+        <section class="posts-grid">
             
-            <article class="post">
-                <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=800&q=80" alt="Vacas leiteiras no pasto" class="post-img">
-                <h3>O Manejo de Pastagem Rotacionada</h3>
-                <p class="data">Publicado em: 8 de Julho de 2026</p>
-                <p>O pastejo rotacionado é fundamental para otimizar a alimentação das vacas e garantir que o capim tenha o tempo certo de descanso para crescer com qualidade...</p>
-                <button class="btn-leia-mais">Ler mais</button>
+            <article class="post-card">
+                <div class="post-thumb">
+                    <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=800&q=80" alt="Vacas leiteiras no pasto">
+                </div>
+                <div class="post-content">
+                    <span class="tag">Manejo</span>
+                    <h3>Pastejo Rotacionado de Alto Rendimento</h3>
+                    <p class="data">📅 8 de Julho de 2026</p>
+                    <p>Entenda como a divisão correta de piquetes e o tempo de descanso do capim podem dobrar a capacidade de lotação da sua propriedade.</p>
+                    <button class="btn-leia-mais">Ler Artigo Completo</button>
+                </div>
             </article>
 
-            <article class="post">
-                <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=800&q=80" alt="Ordenha mecânica" class="post-img">
-                <h3>A Importância da Higiene na Ordenha</h3>
-                <p class="data">Publicado em: 5 de Julho de 2026</p>
-                <p>Manter uma rotina rigorosa de limpeza antes e depois da ordenha evita doenças como a mastite e garante um leite de alta qualidade para o mercado...</p>
-                <button class="btn-leia-mais">Ler mais</button>
+            <article class="post-card">
+                <div class="post-thumb">
+                    <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=800&q=80" alt="Ordenha mecânica">
+                </div>
+                <div class="post-content">
+                    <span class="tag">Qualidade</span>
+                    <h3>Higiene e Linha de Ordenha Eficiente</h3>
+                    <p class="data">📅 5 de Julho de 2026</p>
+                    <p>O passo a passo essencial do pré e pós-dipping para reduzir a CCS (Contagem de Células Somáticas) e eliminar riscos de mastite.</p>
+                    <button class="btn-leia-mais">Ler Artigo Completo</button>
+                </div>
             </article>
         </section>
 
-        <section id="sobre" class="sobre-mim">
-            <h2>Sobre o Kauã</h2>
-            <p>Olá! Sou o Kauã, apaixonado por agropecuária e, especialmente, pela rotina e pelos desafios da bovinocultura de leite. Criei este espaço para registrar aprendizados e trocar ideias com quem também ama o campo.</p>
+        <section id="sobre" class="sobre-mim-card">
+            <div class="sobre-texto">
+                <h2>🤠 Sobre o Kauã</h2>
+                <p>Sou apaixonado pelo agronegócio e pela rotina do campo. Criei este blog com o objetivo de conectar a tecnologia do desenvolvimento web com o conhecimento prático da bovinocultura de leite, trazendo soluções e visões modernas para o setor.</p>
+            </div>
+        </section>
+
+        <section id="contato" class="contato-section">
+            <h2>📩 Vamos trocar uma ideia?</h2>
+            <p>Tem alguma dúvida, sugestão ou quer compartilhar a realidade da sua fazenda? Entre em contato!</p>
+            <div class="redes-sociais">
+                <a href="#" class="rede-link">🔗 Meu GitHub</a>
+                <a href="#" class="rede-link">📸 Meu Instagram</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Blog do Kauã - Todos os direitos reservados.</p>
+        <p>&copy; 2026 Blog do Kauã — Desenvolvido com foco no Futuro do Agro.</p>
     </footer>
 
     <script src="script.js"></script>
