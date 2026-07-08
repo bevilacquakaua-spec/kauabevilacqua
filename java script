@@ -1,14 +1,25 @@
-// Aguarda o carregamento do documento
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Seleciona todos os botões de "Ler mais"
+    // Função para o botão ler mais
     const botoesLeitura = document.querySelectorAll('.btn-leia-mais');
-
-    // Adiciona um evento de clique em cada um deles
     botoesLeitura.forEach((botao) => {
         botao.addEventListener('click', () => {
-            alert('Esta postagem completa estará disponível em breve! Obrigado pelo interesse.');
+            alert('Portas abertas! O artigo completo está sendo preparado para o próximo lote de atualizações.');
         });
     });
 
+    // Sistema Funcional de Dark Mode (Modo Escuro)
+    const btnDarkMode = document.getElementById('toggle-dark-mode');
+    const body = document.body;
+
+    btnDarkMode.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        
+        // Altera o emoji do botão dependendo do tema ativo
+        if (body.classList.contains('dark-theme')) {
+            btnDarkMode.textContent = '☀️ Modo Claro';
+        } else {
+            btnDarkMode.textContent = '🌙 Modo Escuro';
+        }
+    });
 });
